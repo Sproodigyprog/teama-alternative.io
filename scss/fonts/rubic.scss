@@ -1,0 +1,5 @@
+// main: ../index.scss
+
+@include fonts('Rubik-Light', '../fonts/rubik/rubik-light', '300');
+@include fonts('Rubik', '../fonts/rubik/rubik-regular', '400');
+@include fonts('Rubik-Medium', '../fonts/rubik/rubik-medium', '500');

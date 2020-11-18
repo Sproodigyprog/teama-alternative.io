@@ -1,0 +1,31 @@
+//main: ../index.scss
+
+@mixin fonts($name, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($name);
+    src: url($path+".eot");
+    src: url($path+".eot?#iefix") format("embedded-opentype"),
+         url($path+".woff") format("woff"),
+         url($path+".woff2") format("woff2"),
+         url($path+".ttf") format("truetype"), url($path+".svg##{$name}") format("svg");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin font-size($size, $height, $weight: normal, $spacing: normal) {
+  font-size: $size;
+  font-weight: $weight;
+
+  @if $height==normal {
+    line-height: normal;
+  } @else {
+    line-height: $height / $size;
+  }
+
+  @if $spacing==normal {
+    letter-spacing: normal;
+  } @else {
+    letter-spacing: #{$spacing / $size}em;
+  }
+}

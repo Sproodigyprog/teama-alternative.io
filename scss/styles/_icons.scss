@@ -1,0 +1,54 @@
+// main: style.scss
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  fill: $main-color_light;
+  &-around-the-clock {
+    width: 18px;
+    height: 18px;
+  }
+  &-geo {
+    width: 18px;
+    height: 18px;
+  }
+  &-phone {
+    width: 14px;
+    height: 14px;
+  }
+  &-mail {
+    width: 16px;
+    height: 12px;
+  }
+  &-vk {
+    width: 34px;
+    height: 34px;
+    fill: $main-color;
+  }
+  &-arrow {
+    width: 43px;
+    height: 43px;
+  }
+  &-diagnostic {
+    width: 35px;
+    height: 35px;
+  }
+  &-task {
+    width: 29px;
+    height: 35px;
+  }
+  &-ringe {
+    width: 37px;
+    height: 35px;
+  }
+  &-bed {
+    width: 38px;
+    height: 35px;
+  }
+  &-medical {
+    width: 30px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Alternative</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="content">
+        <div class="header__top">
+          <div class="header__logo logo">
+            <a href="#"><img src="img/logo/logo.svg" alt="logo"></a>
+          </div>
+          <div class="header__hours hours block">
+            <div class="block__icon">
+              <svg class="icon-around-the-clock icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 32 32">
+                <path d="M27.314 4.686c-3.022-3.022-7.040-4.686-11.314-4.686s-8.292 1.664-11.314 4.686c-3.022 3.022-4.686 7.040-4.686 11.314s1.664 8.292 4.686 11.314c3.022 3.022 7.040 4.686 11.314 4.686s8.292-1.664 11.314-4.686c3.022-3.022 4.686-7.040 4.686-11.314s-1.664-8.292-4.686-11.314zM20.976 16.53v1.501h-0.777v1.095h-1.677v-1.095h-2.269v-1.501l2.798-3.566h1.148v3.566h0.777zM16 26.937c-6.031 0-10.938-4.907-10.938-10.937s4.907-10.938 10.938-10.938v-1.714l3.339 2.652-3.339 2.652v-1.714c-4.997 0-9.063 4.065-9.063 9.063s4.065 9.063 9.063 9.063c4.997 0 9.063-4.066 9.063-9.063h1.875c0 6.031-4.907 10.937-10.937 10.937zM13.649 14.429c-0.094-0.071-0.224-0.106-0.388-0.106-0.194 0-0.378 0.050-0.552 0.15s-0.355 0.262-0.543 0.486l-1.059-1.245c0.112-0.124 0.256-0.237 0.433-0.34s0.372-0.191 0.587-0.265c0.215-0.073 0.443-0.131 0.684-0.172s0.488-0.062 0.742-0.062c0.677 0 1.19 0.14 1.54 0.419s0.525 0.669 0.525 1.17c0 0.182-0.024 0.344-0.071 0.486s-0.11 0.269-0.19 0.384-0.175 0.219-0.287 0.313c-0.112 0.094-0.229 0.182-0.353 0.265-0.147 0.1-0.302 0.196-0.463 0.287s-0.322 0.193-0.481 0.305h1.942v1.501h-4.652c0-0.294 0.023-0.553 0.071-0.777s0.124-0.425 0.23-0.605c0.106-0.179 0.243-0.34 0.411-0.481s0.375-0.279 0.622-0.415c0.318-0.171 0.569-0.307 0.755-0.411s0.325-0.187 0.419-0.252c0.094-0.065 0.155-0.119 0.181-0.163s0.040-0.093 0.040-0.146c0-0.147-0.047-0.256-0.141-0.326z">
+                </path>
+              </svg>
+            </div>
+            <div class="block__text">
+              <p>Ежедневно</p>
+              <p>Анонимно</p>
+            </div>
+          </div>
+          <div class="header__address address block">
+            <div class="block__icon">
+              <svg class="icon-geo icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 32 32">
+                <path d="M14.988 24.8c0.213 0.319 0.586 0.531 1.012 0.531s0.799-0.212 1.018-0.531l7.101-10.637c0.954-1.431 1.508-3.006 1.508-4.831-0.006-5.275-4.279-9.331-9.627-9.331s-9.621 4.056-9.621 9.331c0 1.825 0.554 3.4 1.508 4.831l7.101 10.637zM16 4c3.035 0 5.497 2.388 5.497 5.331s-2.462 5.331-5.497 5.331c-3.035 0-5.497-2.387-5.497-5.331s2.462-5.331 5.497-5.331zM23.050 20.219l-7.050 9.112-7.050-9.112c-2.41 1.225-3.95 3.056-3.95 5.112 0 3.681 4.923 6.669 11 6.669s11-2.988 11-6.669c0-2.056-1.54-3.887-3.95-5.112z">
+                </path>
+              </svg>
+            </div>
+            <div class="block__text">
+              <p>ул. Некрасовская 30</p>
+              <p>г. Самара,</p>
+            </div>
+          </div>
+          <div class="header__phones phones block">
+            <div class="block__icon">
+              <svg class="icon-phone icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 32 32">
+                <path d="M28.571 0h-25.143c-0.909 0-1.781 0.361-2.424 1.004s-1.004 1.515-1.004 2.424v25.143c0 0.909 0.361 1.782 1.004 2.424s1.515 1.004 2.424 1.004h25.143c0.909 0 1.782-0.361 2.424-1.004s1.004-1.515 1.004-2.424v-25.143c0-0.909-0.361-1.781-1.004-2.424s-1.515-1.004-2.424-1.004zM27.401 21.955l-1.071 4.643c-0.054 0.236-0.187 0.447-0.377 0.598s-0.424 0.233-0.667 0.233c-11.429 0-20.714-9.265-20.714-20.714 0.008-0.24 0.094-0.471 0.243-0.659s0.355-0.323 0.587-0.385l4.643-1.071c0.079-0.017 0.16-0.026 0.241-0.028 0.207 0.010 0.408 0.076 0.581 0.19s0.313 0.273 0.404 0.459l2.143 5c0.052 0.135 0.082 0.278 0.086 0.422-0.017 0.317-0.158 0.615-0.393 0.829l-2.706 2.214c1.64 3.476 4.437 6.273 7.913 7.913l2.214-2.706c0.214-0.234 0.512-0.375 0.829-0.393 0.145 0.005 0.287 0.034 0.422 0.086l5 2.143c0.186 0.091 0.345 0.231 0.459 0.404s0.18 0.374 0.19 0.581c-0.001 0.081-0.011 0.162-0.028 0.241z">
+                </path>
+              </svg>
+            </div>
+            <div class="block__text">
+              <p><a href="tel:+78462711737">8 (846) 271-17-37</a></p>
+              <p><a href="tel:+79023711737">8 (902) 371-17-37</a></p>
+            </div>
+          </div>
+          <div class="socials">
+            <a href="#">
+              <svg class="icon-vk icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 32 32">
+                <path d="M32 28.444v-24.889c0-1.956-1.605-3.556-3.564-3.556h-24.871c-2.044 0-3.564 1.516-3.564 3.556v24.889c0 2.041 1.52 3.556 3.564 3.556h24.871c0.943-0.001 1.848-0.376 2.516-1.042s1.045-1.57 1.049-2.513zM25.216 18.857c0 0 2.012 1.986 2.508 2.907 0.014 0.020 0.020 0.037 0.025 0.044 0.201 0.338 0.252 0.604 0.151 0.8-0.167 0.325-0.736 0.489-0.93 0.503h-3.554c-0.249 0-0.764-0.064-1.39-0.496-0.48-0.334-0.955-0.887-1.417-1.426-0.69-0.8-1.287-1.493-1.888-1.493-0.076-0-0.152 0.012-0.224 0.037-0.457 0.146-1.036 0.795-1.036 2.528 0 0.542-0.427 0.851-0.729 0.851h-1.628c-0.555 0-3.444-0.194-6.002-2.894-3.14-3.307-5.959-9.939-5.984-9.998-0.178-0.428 0.19-0.661 0.59-0.661h3.591c0.482 0 0.636 0.291 0.747 0.553 0.124 0.297 0.594 1.495 1.362 2.843 1.25 2.192 2.020 3.085 2.633 3.085 0.115-0.001 0.227-0.031 0.327-0.087 0.802-0.443 0.652-3.301 0.617-3.892 0-0.112-0.002-1.278-0.411-1.838-0.295-0.405-0.795-0.56-1.097-0.619 0.123-0.17 0.285-0.308 0.473-0.402 0.549-0.274 1.54-0.313 2.524-0.313h0.548c1.068 0.014 1.346 0.084 1.732 0.181 0.78 0.187 0.796 0.693 0.727 2.418-0.019 0.491-0.041 1.047-0.041 1.7 0 0.14-0.005 0.295-0.005 0.455-0.025 0.882-0.053 1.879 0.569 2.288 0.080 0.050 0.173 0.077 0.268 0.078 0.217 0 0.866 0 2.624-3.017 0.773-1.332 1.369-2.903 1.41-3.020 0.062-0.127 0.152-0.238 0.263-0.325 0.091-0.047 0.193-0.071 0.295-0.069h4.222c0.462 0 0.775 0.069 0.834 0.245 0.101 0.283-0.020 1.145-1.948 3.751l-0.859 1.138c-1.749 2.29-1.749 2.407 0.103 4.146z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link main-nav__link_arrow">Услуги</a>
+                <ul class="sub-menu__list">
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Вывод из запоя</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Нарколог на дом</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Кодирование от алкоголизма</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Прерывание запоя</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Гарантии и рекомендации</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Отзывы</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Новости</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="header__bottom-link button button_red">Бесплатная консультация</a>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section class="main-banner">
+        <div class="content">
+          <h1 class="main-banner__title">Вывод из запоя<br>на дому</h1>
+          <p class="main-banner__text">с выездом по Самаре<br> в течение 1 часа</p>
+          <p class="main-banner__price">от 2 500 ₽</p>
+          <a href="#" class="main-banner__link button button_red">Вызвать врача</a>
+        </div>
+      </section>
+      <section class="services">
+        <div class="content">
+          <div class="services__row">
+            <h2 class="services__title">Предоставляемые услуги</h2>
+            <div class="services__item">
+              <img src="img/services/binge.jpg" alt="no-image" class="services__item-img">
+              <h3 class="services__item-title">Вывод из запоя</h3>
+              <p class="services__item-text">Стоимость услуги<br> от 2500 ₽</p>
+              <a href="#" class="services__item-link button button_red">Подробнее</a>
+            </div>
+            <div class="services__item">
+              <img src="img/services/coding.jpg" alt="no-image" class="services__item-img">
+              <h3 class="services__item-title">Кодирование</h3>
+              <p class="services__item-text">Стоимость услуги<br>5000 ₽</p>
+              <a href="#" class="services__item-link button button_red">Подробнее</a>
+            </div>
+            <div class="services__item">
+              <img src="img/services/home-visit.jpg" alt="no-image" class="services__item-img">
+              <h3 class="services__item-title">Нарколог на дом</h3>
+              <p class="services__item-text">Стоимость услуги<br>от 2500 рублей</p>
+              <a href="#" class="services__item-link button button_red">Подробнее</a>
+            </div>
+            <div class="services__item">
+              <img src="img/services/interruption.jpg" alt="no-image" class="services__item-img">
+              <h3 class="services__item-title">Прерывание запоя</h3>
+              <p class="services__item-text">Стоимость услуги<br>от 2500 ₽</p>
+              <a href="#" class="services__item-link button button_red">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="content">
+          <div class="about__row">
+            <div class="about__col">
+              <div class="about__img">
+                <!-- <img src="img/banners/effective.jpg" alt="no-image"> -->
+              </div>
+            </div>
+            <div class="about__col">
+              <span class="about__about">о нас</span>
+              <h2 class="about__title">Эффективное лечение при алкоголизме</h2>
+              <div class="about__services">
+                <span class="about__services-title">
+                  Выездная наркологическая служба «Альтернатива» оказывает услуги:
+                </span>
+                <ul class="about__services-list">
+                  <li class="about__services-item">
+                    Вывод из&nbsp;запоя на&nbsp;дому, снятие алкогольной интоксикации, похмелья.
+                  </li>
+                  <li class="about__services-item">
+                    Лечение алкоголизма современными методами кодирования.
+                  </li>
+                </ul>
+              </div>
+              <p class="about__text">
+                Зависимость человека от&nbsp;алкоголя&nbsp;&mdash; это не&nbsp;дурная привычка, которую легко бросить,
+                а&nbsp;серьезное заболевание. К&nbsp;сожалению, не&nbsp;все это понимают,
+                отсюда попытки не&nbsp;лечить человека медикаментозными методами,
+                а&nbsp;уговаривать &laquo;собраться с&nbsp;силами&raquo;, &laquo;бросить&raquo;, &laquo;прекратить&raquo;.
+                Лечение алкоголизма должно производиться только врачами.
+                Важно понять, что ваш близкий может искренне хотеть отказаться от&nbsp;пагубной привычки,
+                но&nbsp;без сотрудничества с&nbsp;медиками он&nbsp;не&nbsp;способен это сделать.
+              </p>
+              <a href="#" class="about__link button button_blue">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="appointment">
+        <img src="img/banners/banner-2.png" alt="" class="appointment__img">
+        <div class="content">
+          <h2 class="appointment__title">Записаться на бесплатную консультацию</h2>
+          <form action="#" class="appointment__form form">
+            <input name="name" type="text" placeholder="Имя" class="form__input form__input_name">
+            <input name="tel" type="tel" placeholder="Телефон" class="form__input form__input_tel">
+            <textarea name="message" placeholder="Введите сообщение" class="form__input form__input_message"></textarea>
+            <p class="form__disclaimer">
+              Нажимая на&nbsp;кнопку &laquo;Отправить&raquo;,<br />
+              вы&nbsp;соглашаетесь <a href="#" class="form__link">с&nbsp;правилами обработки данных</a>
+            </p>
+            <button type="submit" class="form__button button button_blue">Отправить</button>
+          </form>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="content">
+          <h2 class="reviews__title">Отзывы</h2>
+        </div>
+          <div class="reviews__slider slider">
+            <div class="slider__item item-slider">
+              <span class="item-slider__date">25 Июн 2020</span>
+              <h3 class="item-slider__name">Сергей</h3>
+              <p class="item-slider__text">Спасибо наркологу из выездной службы Альтернатива за помощь в исбавлении от алкогольной зависимости. В начале провели детоксикацию всего организма, а […]</p>
+              <a href="#" class="item-slider__link">
+                <span>подробнее</span>
+                <img src="img/stages/Arrow 3.svg" alt="arrow">
+              </a>
+            </div>
+            <div class="slider__item item-slider">
+              <span class="item-slider__date">29 Ноя 2018</span>
+              <h3 class="item-slider__name">Ольга Иванова</h3>
+              <p class="item-slider__text">
+                Нарколог приехал быстро, прошло минут 20 после моего звонка. Запой у меня был неделю до этого, после чего пить перестала. […]
+              </p>
+              <a href="#" class="item-slider__link">
+                <span>подробнее</span>
+                <img src="img/stages/Arrow 3.svg" alt="arrow">
+              </a>
+            </div>
+            <div class="slider__item item-slider">
+              <span class="item-slider__date">04 Ноя 2018</span>
+              <h3 class="item-slider__name">Ирина</h3>
+              <p class="item-slider__text">
+                Хочу выразить огромную благодарность врачу наркологу выездной службы Альтернатива — Евгению Фролову за проделанную работу. В нашей семье теперь вновь […]
+              </p>
+              <a href="#" class="item-slider__link">
+                <span>подробнее</span>
+                <img src="img/stages/Arrow 3.svg" alt="arrow">
+              </a>
+            </div>
+            <ul class="slider__nav">
+              <li class="slider__nav-item">
+                <img src="img/stages/arrow-left.svg" alt="arrow">
+              </li>
+              <li class="slider__nav-item">
+                <img src="img/stages/arrow-right.svg" alt="arrow">
+              </li>
+            </ul>
+          </div>
+          <a href="" class="reviews__link button button_blue">Все отзывы</a>
+        </div>
+      </section>
+      <section class="stages">
+        <div class="content">
+          <h2 class="stages__title">Этапы лечения</h2>
+          <div class="stages__row">
+            <div class="stages__item stages__item_text">
+              <div class="stages__icon">
+                <svg class="icon-diagnostic icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 32 32">
+                  <path d="M28.834 14.458c-1.746 0-3.166 1.421-3.166 3.167 0 1.42 0.939 2.624 2.229 3.025v7.407c0 1.141-0.928 2.068-2.068 2.068s-2.068-0.928-2.068-2.068v-3.115c0-2.174-1.769-3.944-3.943-3.944s-3.943 1.769-3.943 3.944v3.115c0 1.141-0.928 2.068-2.068 2.068s-2.068-0.928-2.068-2.068v-6.592c3.049-0.358 5.652-2.44 6.641-5.406l3.015-9.040c0.402-1.205 0.207-2.488-0.536-3.519s-1.897-1.622-3.168-1.622h-2.248v-1.877h-1.875v5.63h1.875v-1.877h2.248c0.66 0 1.261 0.307 1.647 0.843s0.488 1.203 0.279 1.829l-3.015 9.040c-0.834 2.5-3.165 4.18-5.8 4.18s-4.966-1.68-5.8-4.18l-3.016-9.040c-0.209-0.627-0.107-1.293 0.279-1.829s0.986-0.843 1.647-0.843h2.248v1.877h1.875v-5.63h-1.875v1.877h-2.248c-1.271 0-2.425 0.591-3.168 1.622s-0.938 2.313-0.536 3.519l3.016 9.040c0.99 2.966 3.592 5.049 6.641 5.406v6.592c0 2.174 1.769 3.943 3.943 3.943s3.943-1.769 3.943-3.943v-3.115c0-1.141 0.928-2.068 2.068-2.068s2.068 0.928 2.068 2.068v3.115c0 2.174 1.769 3.943 3.943 3.943s3.943-1.769 3.943-3.943v-7.407c1.29-0.401 2.229-1.605 2.229-3.025 0-1.746-1.42-3.167-3.166-3.167z">
+                  </path>
+                </svg>
+              </div>
+              <span class="stages__text">Диагностика состояния</span>
+            </div>
+            <svg class="icon-arrow icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 32 32">
+              <path d="M31.134 31.915c0.431 0 0.78-0.349 0.78-0.78v-7.024c0-0.431-0.349-0.78-0.78-0.78s-0.78 0.349-0.78 0.78v6.244h-6.244c-0.431 0-0.78 0.349-0.78 0.78s0.349 0.78 0.78 0.78h7.024zM0.229 1.332l30.354 30.354 1.104-1.104-30.354-30.354-1.104 1.104z"></path>
+            </svg>
+            <div class="stages__item stages__item_text">
+              <div class="stages__icon">
+                <svg class="icon-task icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 32 32">
+                  <path d="M23.77 5.059h-3.557v-1.097c0-0.531-0.431-0.962-0.962-0.962h-0.616v-0.378c0-1.446-1.177-2.622-2.623-2.622s-2.622 1.177-2.622 2.622v0.378h-0.616c-0.531 0-0.962 0.431-0.962 0.962v1.097h-3.557c-1.416 0-2.567 1.152-2.567 2.567v21.806c0 1.416 1.152 2.567 2.567 2.567h15.515c1.416 0 2.567-1.152 2.567-2.567v-21.806c0-1.416-1.152-2.567-2.567-2.567zM13.736 4.924h4.553v2.194h-4.553zM15.314 2.622c0-0.385 0.313-0.699 0.698-0.699s0.699 0.313 0.699 0.699v0.378h-1.397v-0.378zM24.413 29.433c0 0.355-0.289 0.643-0.643 0.643h-15.515c-0.355 0-0.643-0.289-0.643-0.643v-21.806c0-0.355 0.289-0.643 0.643-0.643h3.557v1.097c0 0.531 0.431 0.962 0.962 0.962h6.477c0.531 0 0.962-0.431 0.962-0.962v-1.097h3.557c0.355 0 0.643 0.289 0.643 0.643z"></path>
+                  <path d="M20.808 12.267l-1.3 1.299-0.052-0.052-0.383-0.384c-0.376-0.376-0.985-0.376-1.36 0s-0.376 0.985 0 1.36l1.116 1.116c0.18 0.18 0.425 0.282 0.68 0.282s0.5-0.101 0.68-0.282l1.98-1.98c0.376-0.376 0.376-0.985 0-1.36s-0.985-0.376-1.36 0z"></path>
+                  <path d="M14.83 13.965h-4.293c-0.531 0-0.962 0.431-0.962 0.962s0.431 0.962 0.962 0.962h4.293c0.531 0 0.962-0.431 0.962-0.962s-0.431-0.962-0.962-0.962z"></path>
+                  <path d="M20.808 17.501l-1.3 1.3-0.436-0.436c-0.376-0.375-0.985-0.375-1.36 0s-0.376 0.985 0 1.36l1.116 1.116c0.188 0.188 0.434 0.282 0.68 0.282s0.492-0.094 0.68-0.282l1.98-1.98c0.376-0.376 0.376-0.985 0-1.36s-0.985-0.376-1.36 0z"></path>
+                  <path d="M14.83 19.199h-4.293c-0.531 0-0.962 0.431-0.962 0.962s0.431 0.962 0.962 0.962h4.293c0.531 0 0.962-0.431 0.962-0.962s-0.431-0.962-0.962-0.962z"></path>
+                  <path d="M20.808 22.735l-1.3 1.3-0.436-0.436c-0.376-0.376-0.985-0.376-1.36 0s-0.376 0.985 0 1.36l1.116 1.116c0.188 0.188 0.434 0.282 0.68 0.282s0.492-0.094 0.68-0.282l1.98-1.98c0.376-0.375 0.376-0.985 0-1.36s-0.985-0.375-1.36 0z"></path>
+                  <path d="M14.83 24.433h-4.293c-0.531 0-0.962 0.431-0.962 0.962s0.431 0.962 0.962 0.962h4.293c0.531 0 0.962-0.431 0.962-0.962s-0.431-0.962-0.962-0.962z"></path>
+                </svg>
+              </div>
+              <span class="stages__text">Составление плана лечения</span>
+            </div>
+            <svg class="icon-arrow icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 32 32">
+              <path d="M31.134 31.915c0.431 0 0.78-0.349 0.78-0.78v-7.024c0-0.431-0.349-0.78-0.78-0.78s-0.78 0.349-0.78 0.78v6.244h-6.244c-0.431 0-0.78 0.349-0.78 0.78s0.349 0.78 0.78 0.78h7.024zM0.229 1.332l30.354 30.354 1.104-1.104-30.354-30.354-1.104 1.104z"></path>
+            </svg>
+            <div class="stages__item stages__item_text">
+              <div class="stages__icon">
+                <svg class="icon-ringe icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 32 32">
+                  <path d="M31.684 5.024l-4.709-4.709c-0.421-0.421-1.103-0.421-1.524 0s-0.421 1.103 0 1.524l0.397 0.397-4.452 4.453-1.031-1.031c-0.202-0.202-0.476-0.316-0.762-0.316s-0.56 0.114-0.762 0.316l-13.77 13.77c-1.395 1.395-1.395 3.665 0 5.060l0.458 0.458-5.214 5.215c-0.421 0.421-0.421 1.103 0 1.524 0.21 0.21 0.486 0.316 0.762 0.316s0.551-0.105 0.762-0.316l5.214-5.214 0.458 0.458c0.698 0.698 1.614 1.046 2.53 1.046s1.832-0.349 2.53-1.046l13.77-13.77c0.202-0.202 0.316-0.476 0.316-0.762s-0.114-0.56-0.316-0.762l-1.031-1.031 4.453-4.452 0.397 0.397c0.21 0.21 0.486 0.316 0.762 0.316s0.551-0.105 0.762-0.316c0.421-0.421 0.421-1.103 0-1.524zM11.048 25.404c-0.555 0.555-1.458 0.555-2.013 0l-2.44-2.44c-0.555-0.555-0.555-1.458 0-2.013l1.284-1.284 1.158 1.158c0.147 0.147 0.34 0.221 0.533 0.221s0.386-0.074 0.533-0.221c0.294-0.295 0.294-0.772 0-1.067l-1.158-1.158 1.324-1.324 1.158 1.158c0.147 0.147 0.34 0.221 0.533 0.221s0.386-0.074 0.533-0.221c0.294-0.295 0.294-0.772 0-1.067l-1.158-1.158 1.324-1.324 1.158 1.158c0.147 0.147 0.34 0.221 0.533 0.221s0.386-0.074 0.533-0.221c0.294-0.295 0.294-0.772 0-1.067l-1.158-1.158 1.095-1.095 4.452 4.453-8.227 8.227zM20.799 15.653l-4.453-4.453 3.257-3.257 4.453 4.453-3.257 3.257zM23.787 9.079l-0.867-0.867 4.453-4.453 0.867 0.867-4.453 4.453z">
+                  </path>
+                </svg>
+              </div>
+              <span class="stages__text">Снятие симптомов</span>
+            </div>
+            <svg class="icon-arrow icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 32 32">
+              <path d="M31.134 31.915c0.431 0 0.78-0.349 0.78-0.78v-7.024c0-0.431-0.349-0.78-0.78-0.78s-0.78 0.349-0.78 0.78v6.244h-6.244c-0.431 0-0.78 0.349-0.78 0.78s0.349 0.78 0.78 0.78h7.024zM0.229 1.332l30.354 30.354 1.104-1.104-30.354-30.354-1.104 1.104z"></path>
+            </svg>
+            <div class="stages__item stages__item_text">
+              <div class="stages__icon">
+                <svg class="icon-bed icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 32 32">
+                  <path d="M29.437 16.006v-9.201c0-2.127-1.682-3.858-3.75-3.858h-19.438c-2.068 0-3.75 1.731-3.75 3.858v9.223c-1.455 0.531-2.5 1.96-2.5 3.637v7.073h2.5v2.315h2.5v-2.315h22v2.315h2.5v-2.315h2.5v-7.073c0-1.7-1.075-3.146-2.563-3.659zM5 6.805c0-0.709 0.561-1.286 1.25-1.286h19.438c0.689 0 1.25 0.577 1.25 1.286v9.002h-1.313v-1.286c0-2.127-1.682-3.858-3.75-3.858h-3.375c-0.96 0-1.836 0.373-2.5 0.985-0.664-0.612-1.54-0.985-2.5-0.985h-3.5c-2.068 0-3.75 1.731-3.75 3.858v1.286h-1.25v-9.002zM23.125 14.521v1.286h-5.875v-1.286c0-0.709 0.561-1.286 1.25-1.286h3.375c0.689 0 1.25 0.577 1.25 1.286zM14.75 14.521v1.286h-6v-1.286c0-0.709 0.561-1.286 1.25-1.286h3.5c0.689 0 1.25 0.577 1.25 1.286zM29.5 24.166h-27v-4.501c0-0.709 0.561-1.286 1.25-1.286h24.5c0.689 0 1.25 0.577 1.25 1.286v4.501z">
+                  </path>
+                </svg>
+              </div>
+              <span class="stages__text">Восстановление организма</span>
+            </div>
+            <svg class="icon-arrow icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 32 32">
+              <path d="M31.134 31.915c0.431 0 0.78-0.349 0.78-0.78v-7.024c0-0.431-0.349-0.78-0.78-0.78s-0.78 0.349-0.78 0.78v6.244h-6.244c-0.431 0-0.78 0.349-0.78 0.78s0.349 0.78 0.78 0.78h7.024zM0.229 1.332l30.354 30.354 1.104-1.104-30.354-30.354-1.104 1.104z"></path>
+            </svg>
+            <div class="stages__item stages__item_text">
+              <div class="stages__icon">
+                <svg class="icon-medical icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 32 32">
+                  <path d="M18.813 9.438h-5.625v3.75h-3.75v5.625h3.75v3.75h5.625v-3.75h3.75v-5.625h-3.75zM20.688 15.062v1.875h-3.75v3.75h-1.875v-3.75h-3.75v-1.875h3.75v-3.75h1.875v3.75z"></path>
+                  <path d="M27.314 4.686c-3.022-3.022-7.040-4.686-11.314-4.686s-8.292 1.664-11.314 4.686-4.686 7.040-4.686 11.314c0 2.284 0.471 4.49 1.401 6.557 0.781 1.736 1.849 3.297 3.18 4.651l-3.624 4.792h15.043c4.274 0 8.292-1.664 11.314-4.686s4.686-7.040 4.686-11.314-1.664-8.292-4.686-11.314zM16 30.125h-11.274l2.367-3.129-0.629-0.576c-2.916-2.671-4.589-6.468-4.589-10.419 0-7.789 6.336-14.125 14.125-14.125s14.125 6.336 14.125 14.125-6.336 14.125-14.125 14.125z"></path>
+                </svg>
+              </div>
+              <span class="stages__text">Бесплатные консультации дистанционно</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="content">
+          <h2 class="news__title">Новости</h2>
+        </div>
+          <div class="news__slider slider">
+            <div class="slider__item item-slider">
+              <span class="item-slider__date item-slider__date_big">25 Июн 2020</span>
+              <p class="item-slider__text">
+                Адвокат сообщил о намерении Ефремова больше не пить
+                Актер Михаил Ефремов, ставший участником ДТП на Садовом кольце в Москве со смертельным исходом, намерен бросить пить. Об этом сообщил […]
+              </p>
+              <a href="#" class="item-slider__link">
+                <span>подробнее</span>
+                <img src="img/stages/Arrow 3.svg" alt="arrow">
+              </a>
+            </div>
+            <div class="slider__item item-slider">
+              <span class="item-slider__date item-slider__date_big">29 Ноя 2018</span>
+              <p class="item-slider__text">
+                Горбачев предложил отменить длинные выходные из-за «спивающихся» россиян.
+                «Народ в эти дни просто бездельничает, многие уходят в запои Народ просто спивается в эти длинные выходные», — возмутился экс-президент […]
+              </p>
+              <a href="#" class="item-slider__link">
+                <span>подробнее</span>
+                <img src="img/stages/Arrow 3.svg" alt="arrow">
+              </a>
+            </div>
+            <div class="slider__item item-slider">
+              <span class="item-slider__date item-slider__date_big">04 Ноя 2018</span>
+              <p class="item-slider__text">
+                Большинство россиян поддержали повышение возраста для покупки алкоголя
+                Большинство россиян (78%) поддерживают идею повысить возраст продажи алкоголя с 18 лет до 21 года. Против выступает 21% респондентов. Об […]
+              </p>
+              <a href="#" class="item-slider__link">
+                <span>подробнее</span>
+                <img src="img/stages/Arrow 3.svg" alt="arrow">
+              </a>
+            </div>
+            <ul class="slider__nav">
+              <li class="slider__nav-item">
+                <img src="img/stages/arrow-left.svg" alt="arrow">
+              </li>
+              <li class="slider__nav-item">
+                <img src="img/stages/arrow-right.svg" alt="arrow">
+              </li>
+            </ul>
+          </div>
+          <a href="" class="news__link button button_blue">Все новости</a>
+        </div>
+      </section>
+      <section class="pluses">
+        <div class="content">
+          <h2 class="pluses__title">Преимущества</h2>
+          <div class="pluses__row">
+            <div class="pluses__item">
+              <img src="img/pluses/clock.svg" alt="no-image" class="pluses__icon clock">
+              <p class="pluses__text">Оказание помощи 24 часа в сутки</p>
+            </div>
+            <div class="pluses__item">
+              <img src="img/pluses/doctor.svg" alt="no-image" class="pluses__icon doctor">
+              <p class="pluses__text">Опытные специалисты</p>
+            </div>
+            <div class="pluses__item">
+              <img src="img/pluses/lock.svg" alt="no-image" class="pluses__icon lock">
+              <p class="pluses__text">Анонимное<br />лечение</p>
+            </div>
+            <div class="pluses__item">
+              <img src="img/pluses/award.svg" alt="no-image" class="pluses__icon award">
+              <p class="pluses__text">Многолетний опыт работы, более 20 лет!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="content">
+      <div class="footer__row">
+        <div class="footer__item item-services">
+          <ul class="sub-menu__list">
+            <li class="sub-menu__item">Услуги</li>
+            <li class="sub-menu__item">
+              <a href="#" class="sub-menu__link">Вывод из запоя</a>
+            </li>
+            <li class="sub-menu__item">
+              <a href="#" class="sub-menu__link">Нарколог на дом</a>
+            </li>
+            <li class="sub-menu__item">
+              <a href="#" class="sub-menu__link">Кодирование от алкоголизма</a>
+            </li>
+            <li class="sub-menu__item">
+              <a href="#" class="sub-menu__link">Прерывание запоя</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item footer__item_big item-info">
+          <div class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Гарантии и рекомендации</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Отзывы</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Новости</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Контакты</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Карта сайта</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__item item-contacts">
+          <div class="footer__phones phones block">
+            <div class="block__icon">
+              <svg class="icon-phone icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 32 32">
+                <path d="M28.571 0h-25.143c-0.909 0-1.781 0.361-2.424 1.004s-1.004 1.515-1.004 2.424v25.143c0 0.909 0.361 1.782 1.004 2.424s1.515 1.004 2.424 1.004h25.143c0.909 0 1.782-0.361 2.424-1.004s1.004-1.515 1.004-2.424v-25.143c0-0.909-0.361-1.781-1.004-2.424s-1.515-1.004-2.424-1.004zM27.401 21.955l-1.071 4.643c-0.054 0.236-0.187 0.447-0.377 0.598s-0.424 0.233-0.667 0.233c-11.429 0-20.714-9.265-20.714-20.714 0.008-0.24 0.094-0.471 0.243-0.659s0.355-0.323 0.587-0.385l4.643-1.071c0.079-0.017 0.16-0.026 0.241-0.028 0.207 0.010 0.408 0.076 0.581 0.19s0.313 0.273 0.404 0.459l2.143 5c0.052 0.135 0.082 0.278 0.086 0.422-0.017 0.317-0.158 0.615-0.393 0.829l-2.706 2.214c1.64 3.476 4.437 6.273 7.913 7.913l2.214-2.706c0.214-0.234 0.512-0.375 0.829-0.393 0.145 0.005 0.287 0.034 0.422 0.086l5 2.143c0.186 0.091 0.345 0.231 0.459 0.404s0.18 0.374 0.19 0.581c-0.001 0.081-0.011 0.162-0.028 0.241z">
+                </path>
+              </svg>
+            </div>
+            <div class="block__text">
+              <p><a href="tel:+78462711737">8 (846) 271-17-37</a></p>
+              <p><a href="tel:+79023711737">8 (902) 371-17-37</a></p>
+            </div>
+          </div>
+          <div class="footer__address address block">
+            <div class="block__icon">
+              <svg class="icon-geo icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 32 32">
+                <path d="M14.988 24.8c0.213 0.319 0.586 0.531 1.012 0.531s0.799-0.212 1.018-0.531l7.101-10.637c0.954-1.431 1.508-3.006 1.508-4.831-0.006-5.275-4.279-9.331-9.627-9.331s-9.621 4.056-9.621 9.331c0 1.825 0.554 3.4 1.508 4.831l7.101 10.637zM16 4c3.035 0 5.497 2.388 5.497 5.331s-2.462 5.331-5.497 5.331c-3.035 0-5.497-2.387-5.497-5.331s2.462-5.331 5.497-5.331zM23.050 20.219l-7.050 9.112-7.050-9.112c-2.41 1.225-3.95 3.056-3.95 5.112 0 3.681 4.923 6.669 11 6.669s11-2.988 11-6.669c0-2.056-1.54-3.887-3.95-5.112z">
+                </path>
+              </svg>
+            </div>
+            <div class="block__text">
+              <p>ул. Некрасовская 30</p>
+              <p>г. Самара,</p>
+            </div>
+          </div>
+          <div class="footer__mail mail block">
+            <div class="block__icon">
+              <svg class="icon-mail icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 39 32">
+                <path d="M37.417 0.013c-0.168-0.017-0.337-0.017-0.505 0h-34.462c-0.221 0.003-0.44 0.037-0.652 0.098l17.785 17.711 17.834-17.809z"></path>
+                <path d="M39.237 1.724l-17.92 17.846c-0.461 0.458-1.085 0.716-1.735 0.716s-1.274-0.257-1.735-0.716l-17.76-17.711c-0.055 0.201-0.084 0.407-0.086 0.615v24.615c0 0.653 0.259 1.279 0.721 1.741s1.088 0.721 1.741 0.721h34.462c0.653 0 1.279-0.259 1.741-0.721s0.721-1.087 0.721-1.741v-24.615c-0.010-0.256-0.060-0.51-0.148-0.751zM4.148 27.090h-1.711v-1.76l8.948-8.874 1.735 1.735-8.972 8.898zM36.898 27.090h-1.723l-8.972-8.898 1.735-1.735 8.948 8.874 0.012 1.76z"></path>
+              </svg>
+            </div>
+            <div class="block__text">
+              <p><a href="mailto:narcolog763@gmail.com">narcolog763@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copyright">&copy; 2020 разработано Команда&nbsp;&mdash; А</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

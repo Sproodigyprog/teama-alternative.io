@@ -1,0 +1,35 @@
+// main: style.scss
+
+.button {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #fff;
+  box-sizing: border-box;
+  @include flex-default-center();
+  @include transition-mul((color, background-color, border-color))
+  letter-spacing: 0.04em;
+  &_blue {
+    @include box(230px, 60px);
+    background: $main-color;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    &:hover {
+      border: 1px solid $main-color;
+      background: #fff;
+      color: $grey;
+    }
+  }
+  &_red {
+    @include box(230px, 50px);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    background: $secondary-color;
+    &:hover {
+      border: 1px solid $secondary-color;
+      background: #fff;
+      color: $grey;
+    }
+  }
+}
