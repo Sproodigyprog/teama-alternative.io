@@ -562,6 +562,27 @@ body, html {
   margin: 0 46px 0 0;
 }
 
+.header__phones a {
+  color: #0F0F0F;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.header__phones a:hover {
+  color: #017AA0;
+}
+
+.header__socials .icon {
+  -webkit-transition: fill 0.3s ease;
+  -o-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+}
+
+.header__socials .icon:hover {
+  fill: #0DACCE;
+}
+
 .header__bottom {
   -webkit-display: flex;
   -moz-display: flex;
@@ -582,16 +603,6 @@ body, html {
 
 .header__bottom-link {
   width: 250px;
-}
-
-.header a {
-  -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
-.header a:hover {
-  color: #017AA0;
 }
 
 .main-nav__list {
@@ -669,6 +680,10 @@ body, html {
   transition: color 0.3s ease;
 }
 
+.main-nav__link:hover {
+  color: #017AA0;
+}
+
 .sub-menu__wrp {
   padding: 0 0 13px 0;
   background: transparent;
@@ -697,6 +712,9 @@ body, html {
   line-height: 21px;
   color: #0F0F0F;
   display: inline-block;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .sub-menu__link::after {
@@ -708,6 +726,10 @@ body, html {
   bottom: -20px;
   left: -17px;
   background: #F6F6F6;
+}
+
+.sub-menu__link:hover {
+  color: #017AA0;
 }
 
 .block {
@@ -730,10 +752,6 @@ body, html {
 
 .block__text p:first-child {
   margin: 0 0 10px 0;
-}
-
-.phones a {
-  color: #0F0F0F;
 }
 
 .main-banner {
@@ -934,7 +952,7 @@ body, html {
   border: 1px solid #017AA0;
   border-radius: 5px;
   height: 50px;
-  padding: 16px 0 16px 20px;
+  padding: 15px 0 16px 20px;
   font-size: 14px;
   line-height: 17px;
   color: #0F0F0F;
@@ -980,6 +998,10 @@ body, html {
 
 .form__link:hover {
   color: #017AA0;
+}
+
+.form__button {
+  cursor: pointer;
 }
 
 .reviews {
@@ -1317,6 +1339,34 @@ body, html {
   flex: 0 1 50%;
 }
 
+.footer__phones {
+  position: relative;
+}
+
+.footer__socials {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footer__socials .icon {
+  fill: #0DACCE;
+  -webkit-transition: fill 0.3s ease;
+  -o-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+}
+
+.footer__socials .icon:hover {
+  fill: #017AA0;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  text-align: right;
+}
+
 .footer .block {
   margin: 0 0 18px 0;
 }
@@ -1337,13 +1387,6 @@ body, html {
   font-size: 16px;
   line-height: 21px;
   color: #fff;
-}
-
-.footer__copyright {
-  font-size: 16px;
-  line-height: 21px;
-  color: #fff;
-  text-align: right;
 }
 
 .footer .sub-menu__list {
