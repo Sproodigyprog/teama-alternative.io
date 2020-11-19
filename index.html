@@ -42,8 +42,8 @@
               </svg>
             </div>
             <div class="block__text">
-              <p>ул. Некрасовская 30</p>
               <p>г. Самара,</p>
+              <p>ул. Некрасовская 30</p>
             </div>
           </div>
           <div class="header__phones phones block">
@@ -76,22 +76,23 @@
         <div class="header__bottom">
           <nav class="main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link main-nav__link_arrow">Услуги</a>
-                <ul class="sub-menu__list">
-                  <li class="sub-menu__item">
-                    <a href="#" class="sub-menu__link">Вывод из запоя</a>
-                  </li>
-                  <li class="sub-menu__item">
-                    <a href="#" class="sub-menu__link">Нарколог на дом</a>
-                  </li>
-                  <li class="sub-menu__item">
-                    <a href="#" class="sub-menu__link">Кодирование от алкоголизма</a>
-                  </li>
-                  <li class="sub-menu__item">
-                    <a href="#" class="sub-menu__link">Прерывание запоя</a>
-                  </li>
-                </ul>
+              <li class="main-nav__item main-nav__item_arrow">Услуги
+                <div class="sub-menu__wrp">
+                  <ul class="sub-menu__list">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Вывод из запоя</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Нарколог на дом</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Кодирование от алкоголизма</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Прерывание запоя</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="main-nav__item">
                 <a href="#" class="main-nav__link">Гарантии и рекомендации</a>
@@ -114,8 +115,8 @@
     <main class="page">
       <section class="main-banner">
         <div class="content">
-          <h1 class="main-banner__title">Вывод из запоя<br>на дому</h1>
-          <p class="main-banner__text">с выездом по Самаре<br> в течение 1 часа</p>
+          <h1 class="main-banner__title">Вывод из&nbsp;запоя на дому</h1>
+          <p class="main-banner__text">с&nbsp;выездом по&nbsp;Самаре в&nbsp;течение 1 часа</p>
           <p class="main-banner__price">от 2 500 ₽</p>
           <a href="#" class="main-banner__link button button_red">Вызвать врача</a>
         </div>
@@ -203,6 +204,29 @@
             </p>
             <button type="submit" class="form__button button button_blue">Отправить</button>
           </form>
+        </div>
+      </section>
+      <section class="pluses">
+        <div class="content">
+          <h2 class="pluses__title">Преимущества</h2>
+          <div class="pluses__row">
+            <div class="pluses__item">
+              <img src="img/pluses/clock.svg" alt="no-image" class="pluses__icon clock">
+              <p class="pluses__text">Оказание помощи 24 часа в сутки</p>
+            </div>
+            <div class="pluses__item">
+              <img src="img/pluses/doctor.svg" alt="no-image" class="pluses__icon doctor">
+              <p class="pluses__text">Опытные специалисты</p>
+            </div>
+            <div class="pluses__item">
+              <img src="img/pluses/lock.svg" alt="no-image" class="pluses__icon lock">
+              <p class="pluses__text">Анонимное<br />лечение</p>
+            </div>
+            <div class="pluses__item">
+              <img src="img/pluses/award.svg" alt="no-image" class="pluses__icon award">
+              <p class="pluses__text">Многолетний опыт работы, более 20 лет!</p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="reviews">
@@ -399,29 +423,6 @@
           <a href="" class="news__link button button_blue">Все новости</a>
         </div>
       </section>
-      <section class="pluses">
-        <div class="content">
-          <h2 class="pluses__title">Преимущества</h2>
-          <div class="pluses__row">
-            <div class="pluses__item">
-              <img src="img/pluses/clock.svg" alt="no-image" class="pluses__icon clock">
-              <p class="pluses__text">Оказание помощи 24 часа в сутки</p>
-            </div>
-            <div class="pluses__item">
-              <img src="img/pluses/doctor.svg" alt="no-image" class="pluses__icon doctor">
-              <p class="pluses__text">Опытные специалисты</p>
-            </div>
-            <div class="pluses__item">
-              <img src="img/pluses/lock.svg" alt="no-image" class="pluses__icon lock">
-              <p class="pluses__text">Анонимное<br />лечение</p>
-            </div>
-            <div class="pluses__item">
-              <img src="img/pluses/award.svg" alt="no-image" class="pluses__icon award">
-              <p class="pluses__text">Многолетний опыт работы, более 20 лет!</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   </div>
   <footer class="footer">
@@ -492,8 +493,7 @@
               </svg>
             </div>
             <div class="block__text">
-              <p>ул. Некрасовская 30</p>
-              <p>г. Самара,</p>
+              <p>г. Самара, ул. Некрасовская 30</p>
             </div>
           </div>
           <div class="footer__mail mail block">
@@ -515,6 +515,7 @@
       <p class="footer__copyright">&copy; 2020 разработано Команда&nbsp;&mdash; А</p>
     </div>
   </footer>
+  <script src="vendors/jquery-3.5.1.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

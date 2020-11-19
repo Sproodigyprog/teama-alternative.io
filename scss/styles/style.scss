@@ -21,7 +21,11 @@ body, html {
   max-width: $content-width;
 }
 .header {
-  padding: 48px 0;
+  padding: 20px 0;
+  width: 100%;
+  @include pos-fixed(0, null, null, 0);
+  background: #fff;
+  z-index: 10;
   &__top {
     @include flex-default-center(space-between, center, row);
     margin: 0 0 55px 0;
@@ -46,36 +50,10 @@ body, html {
       width: 250px;
     }
   }
-}
-.sub-menu {
-  &__list {
-    display: none;
-    position: absolute;
-    border: 1px solid $main-color_light;
-    background: #fff;
-    padding: 0 22px;
-    width: 271px;
-    box-sizing: border-box;
-  }
-  &__item {
-    padding: 20px 0;
-  }
-  &__link {
-    position: relative;
-    font-family: 'Rubik-Light';
-    font-size: 16px;
-    line-height: 21px;
-    color: $grey;
-    display: inline-block;
-    &::after {
-      content: '';
-      position: absolute;
-      display: inline-block;
-      width: 260px;
-      height: 1px;
-      bottom: -20px;
-      left: -17px;
-      background: $grey_light;
+  & a {
+    @include transition-simple(color);
+    &:hover {
+      color: $main-color;
     }
   }
 }
@@ -90,13 +68,8 @@ body, html {
     &:last-child {
       margin: 0;
     }
-  }
-  &__link {
-    font-size: 18px;
-    line-height: 21px;
-    color: $grey;
-    display: block;
     &:hover {
+      cursor: pointer;
       &::before {
         transform: rotate(-50deg);
       }
@@ -105,6 +78,8 @@ body, html {
       }
     }
     &_arrow {
+      font-size: 18px;
+      line-height: 21px;
       position: relative;
       padding: 0 10px 0 0;
       &:hover {
@@ -132,7 +107,51 @@ body, html {
         top: 11px;
         right: -16px;
       }
-
+    }
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 21px;
+    color: $grey;
+    display: block;
+    @include transition-simple(color);
+  }
+}
+.sub-menu {
+  &__wrp {
+    padding: 0 0 13px 0;
+    background: transparent;
+  }
+  &__list {
+    display: none;
+    position: absolute;
+    border: 1px solid $main-color_light;
+    background: #fff;
+    padding: 0 22px;
+    width: 271px;
+    box-sizing: border-box;
+    top: 35px;
+    left: 0;
+  }
+  &__item {
+    padding: 20px 0;
+  }
+  &__link {
+    position: relative;
+    font-family: 'Rubik-Light';
+    font-size: 16px;
+    line-height: 21px;
+    color: $grey;
+    display: inline-block;
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 260px;
+      height: 1px;
+      bottom: -20px;
+      left: -17px;
+      background: $grey_light;
     }
   }
 }
@@ -171,17 +190,17 @@ body, html {
 	padding: 87px 0 80px 0;
 	background: url("../img/banners/banner-1.jpg") no-repeat center/cover;
 	box-sizing: border-box;
-  .content {
-  }
   &__title {
     font-size: 82px;
     line-height: 71px;
     margin: 0 0 35px 0;
+    width: 53%;
   }
   &__text {
     font-size: 38px;
     line-height: 45px;
     margin: 0 0 40px 0;
+    width: 34%;
   }
   &__price {
     font-family: 'Rubic-Medium';
@@ -274,7 +293,10 @@ body, html {
 
     }
     &-item {
-
+      &::before {
+        content: '-';
+        display: inline-block;
+      }
     }
   }
   &__text {
@@ -308,6 +330,56 @@ body, html {
     @include flex-default-center(space-between, center, row);
     flex-wrap: wrap;
     width: 620px;
+  }
+}
+.form {
+  &__input {
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid $main-color;
+    border-radius: 5px;
+    height: 50px;
+    padding: 16px 0 16px 20px;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grey;
+    &::placeholder {
+      font-family: 'Rubik-Light';
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &_name {
+      text-transform: capitalize;
+    }
+    &_name,
+    &_tel {
+      width: 300px;
+      margin: 0 0 15px 0;
+    }
+    &_message {
+      width: 100%;
+      height: 150px;
+      margin: 0 0 15px 0;
+      text-transform: capitalize;
+    }
+  }
+  &__disclaimer {
+    width: 100%;
+    font-size: 12px;
+    color: #fff;
+    margin: 0 0 65px 0;
+  }
+  &__link {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    @include transition-simple(color);
+    &:hover {
+      color: $main-color;
+    }
+  }
+  &__button {
+
   }
 }
 .reviews {
@@ -384,44 +456,6 @@ body, html {
     & span {
       margin: 0 5px 0 0;
     }
-  }
-}
-.form {
-  &__input {
-    background: #fff;
-    box-sizing: border-box;
-    border: 1px solid $main-color;
-    border-radius: 5px;
-    height: 50px;
-    padding: 17px 0 16px 20px;
-    &::placeholder {
-      font-family: 'Rubik-Light';
-      font-size: 14px;
-      line-height: 17px;
-    }
-    &_name,
-    &_tel {
-      width: 300px;
-      margin: 0 0 15px 0;
-    }
-    &_message {
-      width: 100%;
-      height: 150px;
-      margin: 0 0 15px 0;
-    }
-  }
-  &__disclaimer {
-    width: 100%;
-    font-size: 12px;
-    color: #fff;
-    margin: 0 0 65px 0;
-  }
-  &__link {
-    color: inherit;
-    font-size: inherit;
-  }
-  &__button {
-
   }
 }
 .stages {
@@ -514,7 +548,7 @@ body, html {
   }
 }
 .pluses {
-  padding: 120px 0;
+  padding: 50px 0;
   &__title {
     font-family: 'Rubik-Medium';
     font-size: 40px;
@@ -571,15 +605,6 @@ body, html {
       @include col(0, 1, 2)
     }
   }
-  &__address {
-    .block__text {
-      @include flexbox();
-      flex-direction: row-reverse;
-      & p:last-child {
-        margin: 0 5px 0 0;
-      }
-    }
-  }
   .block {
     margin: 0 0 18px 0;
     &__icon {
@@ -612,6 +637,7 @@ body, html {
       background: none;
       border: none;
       position: relative;
+      top: 0;
       padding: 0;
       width: auto;
     }
@@ -646,6 +672,12 @@ body, html {
       font-size: 16px;
       line-height: 21px;
       color: #fff;
+    }
+  }
+  & a {
+    @include transition-simple(color);
+    &:hover {
+      color: $main-color_light;
     }
   }
 }
@@ -683,9 +715,7 @@ body, html {
 
 }
 
-.footer__mail {
 
-}
 
 .mail {
 
